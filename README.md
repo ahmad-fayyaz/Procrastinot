@@ -1,3 +1,6 @@
+![Plugin on the right panel.](https://github.com/ahmad-fayyaz/Procrastinot/blob/master/UI_sample.png)
+
+
 ## **Features**
 1. **Task Management Interface:**
    - A dedicated panel to manage tasks directly within Obsidian's workspace.
