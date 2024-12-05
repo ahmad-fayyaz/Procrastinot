@@ -27,9 +27,8 @@
 7. **Persistent Storage:**
    - All tasks, statuses, and filters are saved and persist across Obsidian sessions.
 
----
 
-## **UI Enhancements**
+## **UI**
 - Minimalistic, theme-adaptive styling.
 - Color-coded statuses:
   - Red for "not started."
@@ -37,13 +36,11 @@
   - Green for "completed" with a satisfying green border for completed tasks.
 - Responsive layout for filtering and task creation.
 
----
 
-## **Known Limitations**
+## **Issues**
 - Tasks currently default to end-of-day (`23:59`) due times. Time-specific deadlines are not yet supported but are planned for future updates.
 - Filters work independently, and combined filter logic could be optimized further in subsequent releases.
 
----
 
 ## **Coming Soon**
 1. **Priority Levels:** Assign `low`, `medium`, or `high` priority to tasks.
