@@ -253,6 +253,7 @@ class TaskManagerView extends View {
         if (timeDiff <= 0) {
           countdownEl.textContent = "Expired";
           countdownEl.classList.add("expired");
+          return;
         }
         const totalMinutes = Math.floor(timeDiff / (1000 * 60));
         const days = Math.floor(totalMinutes / (60 * 24));
