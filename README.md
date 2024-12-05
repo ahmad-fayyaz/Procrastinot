@@ -1,4 +1,4 @@
-## **New Features**
+## **Features**
 1. **Task Management Interface:**
    - A dedicated panel to manage tasks directly within Obsidian's workspace.
    - Create, edit, and delete tasks seamlessly.
