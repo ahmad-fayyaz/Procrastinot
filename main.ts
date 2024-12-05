@@ -1,5 +1,11 @@
 import { App, Modal, Plugin, WorkspaceLeaf, View } from "obsidian";
 
+
+// Obsidian Guidelines, 
+// Don't use var. Use let or const instead.
+// Do use async and await when you can for readability, instead of using Promise.
+// Don't manage reading and write plugin data yourself. Use Plugin.loadData() and Plugin.saveData() instead.
+
 type Task = {
   id: string;
   text: string;
@@ -60,7 +66,6 @@ export default class ProcrastinotPlugin extends Plugin {
     this.registerView(
       VIEW_TYPE_TASK_MANAGER,
       (leaf) => new TaskManagerView(leaf, this)
-      
     );
 
     this.addRibbonIcon("check-in-circle", "Procrastinot", () => {
