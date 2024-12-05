@@ -1,8 +1,124 @@
-/*
+/* Main container */
+.task-manager-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* Top row (filters) */
+.filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 
-If your plugin does not need CSS, delete this file.
+.filter-row button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
 
-*/
+.filter-row button:hover {
+  background-color: var(--background-modifier-hover);
+  transform: scale(1.05);
+}
+
+/* Middle row (add task) */
+.add-task-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.add-task-row input {
+  padding: 8px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  flex: 1;
+}
+
+.add-task-row button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.add-task-row button:hover {
+  background-color: var(--background-modifier-hover);
+  transform: scale(1.05);
+}
+
+/* Task list */
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Task items */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  background-color: var(--background-secondary);
+  color: var(--text-normal);
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.task-item.completed {
+  border-color: var(--color-green);
+  background-color: var(--background-success);
+}
+
+/* Text inside task items */
+.task-item span {
+  flex: 1;
+  margin-right: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Dropdown for status */
+.task-item select {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: var(--background-tertiary);
+  color: var(--text-normal);
+  border: 1px solid var(--background-modifier-border);
+  width: 150px;
+}
+
+/* Countdown styles */
+.countdown {
+  margin-left: 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--text-muted);
+}
+
+.countdown.expired {
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+/* Divider for completed tasks */
+.task-list-container hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+  margin: 8px 0;
+}
