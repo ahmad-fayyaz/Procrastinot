@@ -1,18 +1,14 @@
-/* Main container */
 .task-manager-container {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-
-/* Top row (filters) */
 .filter-row {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
-
 .filter-row button {
   padding: 8px 12px;
   border: none;
@@ -22,19 +18,15 @@
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
 .filter-row button:hover {
   background-color: var(--background-modifier-hover);
   transform: scale(1.05);
 }
-
-/* Middle row (add task) */
 .add-task-row {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
 }
-
 .add-task-row input {
   padding: 8px;
   border: 1px solid var(--background-modifier-border);
@@ -43,7 +35,6 @@
   color: var(--text-normal);
   flex: 1;
 }
-
 .add-task-row button {
   padding: 8px 16px;
   border: none;
@@ -53,20 +44,15 @@
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
 .add-task-row button:hover {
   background-color: var(--background-modifier-hover);
   transform: scale(1.05);
 }
-
-/* Task list */
 .task-list-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
-/* Task items */
 .task-item {
   display: flex;
   align-items: center;
@@ -78,13 +64,10 @@
   color: var(--text-normal);
   transition: border-color 0.2s ease, background-color 0.2s ease;
 }
-
 .task-item.completed {
   border-color: var(--color-green);
   background-color: var(--background-success);
 }
-
-/* Text inside task items */
 .task-item span {
   flex: 1;
   margin-right: 8px;
@@ -92,8 +75,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/* Dropdown for status */
 .task-item select {
   padding: 4px 8px;
   border-radius: 4px;
@@ -102,21 +83,16 @@
   border: 1px solid var(--background-modifier-border);
   width: 150px;
 }
-
-/* Countdown styles */
 .countdown {
   margin-left: 8px;
   font-size: 0.9em;
   font-weight: bold;
   color: var(--text-muted);
 }
-
 .countdown.expired {
   color: var(--color-red);
   font-weight: bold;
 }
-
-/* Divider for completed tasks */
 .task-list-container hr {
   border: none;
   border-top: 1px solid var(--background-modifier-border);
